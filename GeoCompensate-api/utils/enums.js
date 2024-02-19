@@ -10,3 +10,8 @@ exports.CLOCK_TYPE = {
     WORK_START: "WORK_START",
     WORK_END: "WORK_END"
 }
+
+exports.SEX = {
+    FEMALE: "FEMALE",
+    MALE: "MALE"
+}

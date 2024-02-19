@@ -6,6 +6,7 @@ class LoginController {
         try {
             const payload = req.body;
             let emp = await checkCredentials(payload);
+            delete emp.password;
             return res.status(200).json({
                 type: "success",
                 message: "Success result",
