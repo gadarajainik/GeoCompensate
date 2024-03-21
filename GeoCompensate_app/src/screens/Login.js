@@ -18,7 +18,7 @@ const Login = ({navigation}) => {
         'http://10.0.2.2:3001/api/v1/login',
         dataToSend,
       );
-      response.data
+      response.data.data
         ? navigation.navigate('Home')
         : 'Invalid credentials. Try again!';
       console.log('Response:', response.data);
